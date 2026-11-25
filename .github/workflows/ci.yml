@@ -1,0 +1,36 @@
+name: SpecAlign CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Set up Python 3.12
+        run: uv python install 3.12
+
+      - name: Sync dependencies
+        run: uv sync --frozen || uv sync
+
+      - name: Run Ruff static checks
+        run: uv run ruff check app tests
+
+      - name: Run unit & contract test suite
+        run: uv run pytest -v
+
+      - name: Install google-agents-cli and run ADK static lint
+        run: |
+          uv tool install google-agents-cli
+          agents-cli lint

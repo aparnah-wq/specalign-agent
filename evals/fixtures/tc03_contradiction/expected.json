@@ -1,0 +1,7 @@
+{
+  "test_case_id": "TC-03",
+  "expected_primary_root_cause": "UNDOCUMENTED_CONTRADICTION",
+  "expected_min_blockers": 1,
+  "expected_status": "CONTRADICTION",
+  "notes": "TDD chooses us-central1 conflicting directly with EU residency mandate."
+}

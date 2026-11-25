@@ -1,0 +1,7 @@
+{
+  "test_case_id": "TC-01",
+  "expected_primary_root_cause": "ALIGNED",
+  "expected_min_score": 95,
+  "expected_blocker_count": 0,
+  "notes": "Clean aligned pair verifying low false-positive rate."
+}

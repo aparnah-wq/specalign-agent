@@ -1,0 +1,7 @@
+{
+  "test_case_id": "TC-07",
+  "expected_primary_root_cause": "STALE_OR_MISSING_PRD_SPEC",
+  "expected_status": "PRD_BACKFILL_REQUIRED",
+  "expected_action_owner": "PM / T/PgM",
+  "notes": "Must classify verbal-sync rules as STALE_OR_MISSING_PRD_SPEC, not UNJUSTIFIED_SCOPE_CREEP."
+}

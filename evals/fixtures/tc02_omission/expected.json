@@ -1,0 +1,10 @@
+{
+  "test_case_id": "TC-02",
+  "expected_primary_root_cause": "ACCIDENTAL_OMISSION",
+  "expected_min_blockers": 2,
+  "expected_missing_refs": [
+    "NFR-001",
+    "NFR-002"
+  ],
+  "notes": "PRD latency SLA and SOC 2 audit logging completely omitted from TDD."
+}

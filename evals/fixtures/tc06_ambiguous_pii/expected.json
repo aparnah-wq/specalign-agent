@@ -1,0 +1,9 @@
+{
+  "test_case_id": "TC-06",
+  "expected_primary_root_cause": "AMBIGUOUS_PRD_SPEC",
+  "expected_pii_leaks": 0,
+  "expected_missing_refs": [
+    "REQ-002"
+  ],
+  "notes": "Tests vague PRD detection, missing monitoring Blocker, and 0% PII leakage."
+}

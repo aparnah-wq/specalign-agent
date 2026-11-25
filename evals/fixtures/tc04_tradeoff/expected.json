@@ -1,0 +1,7 @@
+{
+  "test_case_id": "TC-04",
+  "expected_primary_root_cause": "INTENTIONAL_TRADEOFF",
+  "expected_blocker_count": 0,
+  "expected_action_owner": "PM",
+  "notes": "Must classify as documented trade-off for PM ratification, not accidental bug."
+}

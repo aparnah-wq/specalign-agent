@@ -1,0 +1,6 @@
+{
+  "test_case_id": "TC-05",
+  "expected_primary_root_cause": "UNJUSTIFIED_SCOPE_CREEP",
+  "expected_status": "SCOPE_CREEP",
+  "notes": "TDD adds Kafka, GKE multi-region, and custom GPU fine-tuning with zero PRD justification."
+}

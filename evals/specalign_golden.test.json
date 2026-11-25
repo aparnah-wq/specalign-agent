@@ -1,0 +1,352 @@
+{
+  "eval_set_id": "specalign-golden-7case-v1",
+  "name": "SpecAlign 7-Case Planted-Defect Golden Evaluation Set",
+  "description": "Clean-room synthetic PRD, Business Goals, and TDD test suites covering clean alignment plus all 6 drift root-cause categories and PII redaction.",
+  "eval_cases": [
+    {
+      "eval_id": "tc-01_tc01_clean",
+      "conversation": [
+        {
+          "invocation_id": "specalign-golden-01",
+          "user_content": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "Audit project 'tc01_clean' revision v1 using PRD at evals/fixtures/tc01_clean/prd.md, TDD at evals/fixtures/tc01_clean/tdd.md. Do not save any decision yet."
+              }
+            ]
+          },
+          "final_response": {
+            "role": "model",
+            "parts": [
+              {
+                "text": "SpecAlign Executive Scorecard for tc01_clean: primary classification ALIGNED. Clean aligned pair verifying low false-positive rate."
+              }
+            ]
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": null,
+                "name": "ingest_document",
+                "args": {
+                  "doc_role": "prd",
+                  "file_path": "evals/fixtures/tc01_clean/prd.md"
+                }
+              },
+              {
+                "id": null,
+                "name": "ingest_document",
+                "args": {
+                  "doc_role": "tdd",
+                  "file_path": "evals/fixtures/tc01_clean/tdd.md"
+                }
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1763755201.0
+        }
+      ],
+      "session_input": null,
+      "creation_timestamp": 1763755201.0
+    },
+    {
+      "eval_id": "tc-02_tc02_omission",
+      "conversation": [
+        {
+          "invocation_id": "specalign-golden-02",
+          "user_content": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "Audit project 'tc02_omission' revision v1 using PRD at evals/fixtures/tc02_omission/prd.md, TDD at evals/fixtures/tc02_omission/tdd.md. Do not save any decision yet."
+              }
+            ]
+          },
+          "final_response": {
+            "role": "model",
+            "parts": [
+              {
+                "text": "SpecAlign Executive Scorecard for tc02_omission: primary classification ACCIDENTAL_OMISSION. PRD latency SLA and SOC 2 audit logging completely omitted from TDD."
+              }
+            ]
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": null,
+                "name": "ingest_document",
+                "args": {
+                  "doc_role": "prd",
+                  "file_path": "evals/fixtures/tc02_omission/prd.md"
+                }
+              },
+              {
+                "id": null,
+                "name": "ingest_document",
+                "args": {
+                  "doc_role": "tdd",
+                  "file_path": "evals/fixtures/tc02_omission/tdd.md"
+                }
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1763755202.0
+        }
+      ],
+      "session_input": null,
+      "creation_timestamp": 1763755202.0
+    },
+    {
+      "eval_id": "tc-03_tc03_contradiction",
+      "conversation": [
+        {
+          "invocation_id": "specalign-golden-03",
+          "user_content": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "Audit project 'tc03_contradiction' revision v1 using PRD at evals/fixtures/tc03_contradiction/prd.md, TDD at evals/fixtures/tc03_contradiction/tdd.md and business goals at evals/fixtures/tc03_contradiction/business_goals.md. Do not save any decision yet."
+              }
+            ]
+          },
+          "final_response": {
+            "role": "model",
+            "parts": [
+              {
+                "text": "SpecAlign Executive Scorecard for tc03_contradiction: primary classification UNDOCUMENTED_CONTRADICTION. TDD chooses us-central1 conflicting directly with EU residency mandate."
+              }
+            ]
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": null,
+                "name": "ingest_document",
+                "args": {
+                  "doc_role": "prd",
+                  "file_path": "evals/fixtures/tc03_contradiction/prd.md"
+                }
+              },
+              {
+                "id": null,
+                "name": "ingest_document",
+                "args": {
+                  "doc_role": "tdd",
+                  "file_path": "evals/fixtures/tc03_contradiction/tdd.md"
+                }
+              },
+              {
+                "id": null,
+                "name": "ingest_document",
+                "args": {
+                  "doc_role": "business_goals",
+                  "file_path": "evals/fixtures/tc03_contradiction/business_goals.md"
+                }
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1763755203.0
+        }
+      ],
+      "session_input": null,
+      "creation_timestamp": 1763755203.0
+    },
+    {
+      "eval_id": "tc-04_tc04_tradeoff",
+      "conversation": [
+        {
+          "invocation_id": "specalign-golden-04",
+          "user_content": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "Audit project 'tc04_tradeoff' revision v1 using PRD at evals/fixtures/tc04_tradeoff/prd.md, TDD at evals/fixtures/tc04_tradeoff/tdd.md. Do not save any decision yet."
+              }
+            ]
+          },
+          "final_response": {
+            "role": "model",
+            "parts": [
+              {
+                "text": "SpecAlign Executive Scorecard for tc04_tradeoff: primary classification INTENTIONAL_TRADEOFF. Must classify as documented trade-off for PM ratification, not accidental bug."
+              }
+            ]
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": null,
+                "name": "ingest_document",
+                "args": {
+                  "doc_role": "prd",
+                  "file_path": "evals/fixtures/tc04_tradeoff/prd.md"
+                }
+              },
+              {
+                "id": null,
+                "name": "ingest_document",
+                "args": {
+                  "doc_role": "tdd",
+                  "file_path": "evals/fixtures/tc04_tradeoff/tdd.md"
+                }
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1763755204.0
+        }
+      ],
+      "session_input": null,
+      "creation_timestamp": 1763755204.0
+    },
+    {
+      "eval_id": "tc-05_tc05_scope_creep",
+      "conversation": [
+        {
+          "invocation_id": "specalign-golden-05",
+          "user_content": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "Audit project 'tc05_scope_creep' revision v1 using PRD at evals/fixtures/tc05_scope_creep/prd.md, TDD at evals/fixtures/tc05_scope_creep/tdd.md. Do not save any decision yet."
+              }
+            ]
+          },
+          "final_response": {
+            "role": "model",
+            "parts": [
+              {
+                "text": "SpecAlign Executive Scorecard for tc05_scope_creep: primary classification UNJUSTIFIED_SCOPE_CREEP. TDD adds Kafka, GKE multi-region, and custom GPU fine-tuning with zero PRD justification."
+              }
+            ]
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": null,
+                "name": "ingest_document",
+                "args": {
+                  "doc_role": "prd",
+                  "file_path": "evals/fixtures/tc05_scope_creep/prd.md"
+                }
+              },
+              {
+                "id": null,
+                "name": "ingest_document",
+                "args": {
+                  "doc_role": "tdd",
+                  "file_path": "evals/fixtures/tc05_scope_creep/tdd.md"
+                }
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1763755205.0
+        }
+      ],
+      "session_input": null,
+      "creation_timestamp": 1763755205.0
+    },
+    {
+      "eval_id": "tc-06_tc06_ambiguous_pii",
+      "conversation": [
+        {
+          "invocation_id": "specalign-golden-06",
+          "user_content": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "Audit project 'tc06_ambiguous_pii' revision v1 using PRD at evals/fixtures/tc06_ambiguous_pii/prd.md, TDD at evals/fixtures/tc06_ambiguous_pii/tdd.md. Do not save any decision yet."
+              }
+            ]
+          },
+          "final_response": {
+            "role": "model",
+            "parts": [
+              {
+                "text": "SpecAlign Executive Scorecard for tc06_ambiguous_pii: primary classification AMBIGUOUS_PRD_SPEC. Tests vague PRD detection, missing monitoring Blocker, and 0% PII leakage."
+              }
+            ]
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": null,
+                "name": "ingest_document",
+                "args": {
+                  "doc_role": "prd",
+                  "file_path": "evals/fixtures/tc06_ambiguous_pii/prd.md"
+                }
+              },
+              {
+                "id": null,
+                "name": "ingest_document",
+                "args": {
+                  "doc_role": "tdd",
+                  "file_path": "evals/fixtures/tc06_ambiguous_pii/tdd.md"
+                }
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1763755206.0
+        }
+      ],
+      "session_input": null,
+      "creation_timestamp": 1763755206.0
+    },
+    {
+      "eval_id": "tc-07_tc07_stale_prd_verbal",
+      "conversation": [
+        {
+          "invocation_id": "specalign-golden-07",
+          "user_content": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "Audit project 'tc07_stale_prd_verbal' revision v1 using PRD at evals/fixtures/tc07_stale_prd_verbal/prd.md, TDD at evals/fixtures/tc07_stale_prd_verbal/tdd.md. Do not save any decision yet."
+              }
+            ]
+          },
+          "final_response": {
+            "role": "model",
+            "parts": [
+              {
+                "text": "SpecAlign Executive Scorecard for tc07_stale_prd_verbal: primary classification STALE_OR_MISSING_PRD_SPEC. Must classify verbal-sync rules as STALE_OR_MISSING_PRD_SPEC, not UNJUSTIFIED_SCOPE_CREEP."
+              }
+            ]
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": null,
+                "name": "ingest_document",
+                "args": {
+                  "doc_role": "prd",
+                  "file_path": "evals/fixtures/tc07_stale_prd_verbal/prd.md"
+                }
+              },
+              {
+                "id": null,
+                "name": "ingest_document",
+                "args": {
+                  "doc_role": "tdd",
+                  "file_path": "evals/fixtures/tc07_stale_prd_verbal/tdd.md"
+                }
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1763755207.0
+        }
+      ],
+      "session_input": null,
+      "creation_timestamp": 1763755207.0
+    }
+  ],
+  "creation_timestamp": 1763755200.0
+}

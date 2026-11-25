@@ -1,0 +1,20 @@
+# Python bytecode & virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Secrets & local environment config (NEVER commit)
+.env
+app/.env
+*.json.key
+
+# Local runtime state & deployment metadata
+data/
+deployment_metadata.json
+*.db
+*.sqlite3
+
+.adk/
+app/.adk/
